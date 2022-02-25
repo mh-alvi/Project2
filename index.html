@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvi's gym</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Roboto Mono', monospace;
+        margin: 0px;
+        padding: 0px;
+        background: rgba(76, 175, 80, 0.3);
+        background: url('img/oop2.jpg');
+    }
+
+    .left {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        top: 10px;
+        margin: 0px 16px 9px 16px;
+        padding: 5px;
+        height: 60px;
+        width: 42px;
+
+    }
+
+    .left div {
+        color: black;
+        text-align: center;
+        line-height: 0px;
+        font-size: 19px;
+    }
+
+    .middle {
+        display: block;
+        color: white;
+        width: 65%;
+        margin: 25px auto;
+        /* border: 2px solid rgb(222, 233, 122); */
+
+    }
+
+    .right {
+        right: 80px;
+        top: 22px;
+        position: absolute;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-decoration-style: solid;
+        text-shadow: grey;
+        padding: 20px;
+
+    }
+
+    .navbar li a:hover {
+        color: rgb(100, 92, 92);
+        text-decoration: underline;
+    }
+
+    .btn1 {
+        border: 1.5px solid rgb(255, 254, 254);
+        background-color: rgb(66, 66, 66);
+        color: white;
+        font-size: 17px;
+        width: 140px;
+        border-radius: 26px;
+        margin: 9px;
+        padding: 12px;
+    }
+
+    .btn1:hover {
+        background-color: black;
+    }
+
+    .container {
+        color: white;
+        border: 4px solid rgb(255, 251, 25);
+        margin: 110px 70px;
+        padding: 111px 39px 32px 39px;
+        width: 30%;
+        border-radius: 43px;
+    }
+
+    .heading1 {
+        margin: -74px 2px 44px 2px;
+        padding: 2px 2px 2px 8px;
+        color: white;
+        background-color: #707067;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .heading1:hover {
+        color: rgb(240, 238, 150);
+        background-color: rgb(73, 73, 64);
+    }
+
+    .btn2 {
+        border: 1.5px solid rgb(255, 254, 254);
+        background-color: rgb(66, 66, 66);
+        color: white;
+        font-size: 15px;
+        width: 85px;
+        border-radius: 9px;
+        margin: 2px 2px 2px 5px;
+        padding: 2px;
+
+    }
+
+    .btn2:hover {
+        background-color: black;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 170px;
+        padding: 4px 20px 4px 20px;
+        border: 2px solid black;
+        margin: 9px 2px 9px 2px;
+
+    }
+</style>
+
+<body>
+    <header class="headergym">
+        <!-- left div for logo -->
+        <div class="left">
+            <img src="img/logo.png.png" alt="">
+            <div>Alvi GYM</div>
+        </div>
+        <!-- middle div for navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right div for some buttons -->
+        <div class="right">
+            <button class="btn1">Start Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="heading1">Fill The Form To Join Our GYM</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Gender">
+            </div>
+            <button class="btn2">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
